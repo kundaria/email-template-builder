@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Template Builder</title>
+  <link rel="stylesheet" href="/grapesjs/css/grapes.min.css">
+  <style>
+    body, html { height: 100%; margin: 0; }
+    #gjs { height: 100%; }
+  </style>
+</head>
+<body>
+  <div id="gjs"></div>
+  <script src="/grapesjs/grapes.min.js"></script>
+  <script src="/grapesjs/grapesjs-preset-newsletter.min.js"></script>
+  <script>
+    const editor = grapesjs.init({
+      container: '#gjs',
+      height: '100%',
+      fromElement: false,
+      storageManager: false,
+      plugins: ['gjs-preset-newsletter'],
+      pluginsOpts: {
+        'gjs-preset-newsletter': {}
+      }
+    });
+  </script>
+</body>
+</html>
