@@ -1,0 +1,18 @@
+{
+  "name": "email-template-builder",
+  "version": "1.0.0",
+  "description": "generate code of email template builder using drag and drop layouts and elements and configuration settings.(tool/pluign/module/package) which can be integrate into any web apps to create custom email templates",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.1.0",
+    "grapesjs": "^0.22.9",
+    "grapesjs-preset-newsletter": "^1.0.2"
+  }
+}
